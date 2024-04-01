@@ -372,6 +372,9 @@ padding: 5px;
 .blogcontainer h2{
     font-size:21px ;
 }
+    .blogitems>p{
+    width: 100%;
+    }
     .contactform h1 {
         text-align: center; 
        font-size: 30px;
