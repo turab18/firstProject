@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+ gap: 20px;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #d5cccc;
+    width: 15vw;
+    height: 100vh;
+    
+    font-family: 'Courier New', Courier, monospace;
+
+
+    animation: part7 1s ease 0.3s forwards;
+    opacity: 0;
+}
+
+
+.sidebar nav {
+    padding: 20px 0;
+   
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 10px;
+    width: 100%;
+
+
+}
+
+.sidebar nav li:hover {
+    color: white;
+    background-color: rgb(36, 222, 119);
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+
+    width: 85vw;
+    /* height: 100vh; */
+}
+
+.info {
+
+    height: 70vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infopic img {
+    animation: part6 1s ease 1s forwards;
+    height: 70vh;
+   border: 5px solid rgb(190, 60, 60);
+   border-radius: 50%;
+   background-color: rgb(101, 72, 101);
+   display: no;
+}
+.infopic{
+    animation: part6 1s ease 1s forwards;
+     height: 70vh;
+    border: 5px solid rgb(190, 60, 60);
+    border-radius: 50%;
+    background-color: rgb(101, 72, 101);
+    opacity: 0;
+}
+
+.divinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    font-size: 60px;
+
+     animation: part1 1s ease 0.4s forwards;
+    opacity: 0;
+
+}
+.about {
+    font-size: 30px;
+    animation: part2 1s ease 0.6s forwards;
+    opacity: 0;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+    animation: part3 1s ease 0.5s forwards;
+    opacity: 0;
+   
+}
+
+
+
+.moreabout {
+    padding: 10px 0;
+    font-size: 17px;
+    animation: part4 1s ease 0.7s forwards;
+    opacity: 0;
+}
+
+.divinfo .buttons {
+    margin-top: 20px;
+    animation: part5 1s ease 0.8s forwards;
+    opacity: 0;
+}
+
+.buttons button {
+    width: 160px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: none;
+
+}
+
+.buttons button:hover {
+    border: 1px solid black;
+    color: dodgerblue;
+    background-color: white;
+    transition: all 1s ease-in-out;
+}
+
+
+.menu {
+    display: none;
+    position: relative;
+    top: 15px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.contactform {
+    padding: 0 35px;
+    padding-top: 60px;
+
+}
+
+.contactform h1 {
+    /* text-align: center; */
+    text-align: left;
+}
+
+.contactform form div {
+    padding: 10px 0;
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.mb-3 input {
+    width: 40%;
+    padding: 7px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+}
+.mb-3 input:focus{
+ 
+ box-shadow: 0 0 7px blue;
+ transition: all 0.3s ease;
+}
+
+.mb-3 label {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.contactform form {
+    margin-top: 20px;
+}
+.blogitems>p{
+    width: 600px;
+    text-align: justify;
+    padding: 10px 0;
+}
+.blogitems button{
+     width: 150px;
+     font-size: 18px;
+font-weight: 100;
+padding: 5px;
+}
+@keyframes part1 {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes part2 {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+
+        transform: translateY(0);
+        opacity: 1;
+    }}
+    @keyframes part3 {
+        0%{
+            transform: translateX(-100px);
+        }
+        100%{
+    
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+    }
+    @keyframes part4 {
+        0%{
+            transform: translateX(100px);
+        }
+        100%{
+    
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+    }
+    @keyframes part5 {
+        0%{
+            transform: translateY(100px);
+        }
+        100%{
+    
+            transform: translateY(0);
+            opacity: 1;
+        }}
+        @keyframes part6{
+            0%{
+                transform: scale(0);
+            }
+            100%{
+        
+                transform: scale(1);
+                opacity: 1;
+            }}
+            @keyframes part7 {
+                0%{
+                    transform: translateX(-100px);
+                }
+                100%{
+            
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                
+            }
+@media (max-width:600px) {
+    .info {
+        margin-top: 0;
+    }
+
+    .menu {
+        position: relative;
+        top: 5px;
+
+        display: inline;
+        z-index: 1;
+    }
+
+    .sidebar nav {
+        padding-top: 40px;
+    }
+
+    .sidebar {
+        width: 240px;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        bottom: -350px;
+        transition: all 1s ease-in-out;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .divinfo {
+        padding-left: 20px;
+        order: 2;
+
+    }
+
+    .divinfo .hello {
+        font-size: 40px;
+    }
+
+    .divinfo .name {
+        font-size: 35px;
+    }
+
+    .divinfo .about {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .divinfo .moreabout {
+        font-size: 20px;
+    }
+
+    .buttons {
+        margin-top: 0;
+    }
+
+    .buttons button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .infopic img {
+        width: 230px;
+        height: 25vh;
+    }
+
+    .infopic {
+        width: 230px;
+        height: 25vh;
+        position: relative;
+        top: 10px;
+        left: 25%;
+        z-index: -1;
+    }
+    .blogmain{
+    padding-left:35px ;
+}
+.blogcontainer h1{
+    font-size:23px ;
+}
+.blogcontainer h2{
+    font-size:21px ;
+}
+    .contactform h1 {
+        text-align: center; 
+       font-size: 30px;
+    }
+   
+   
+    
+    .mb-3 input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    outline: 0;
+    border: 1px solid rgb(46, 44, 44);
+        border-radius: 10px;
+    }
+    
+    .mb-3 label {
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+    
+    .contactform form {
+        margin-top: 20px;
+    }
+    .btn-primary{
+        font-size: 19px;
+        width: 100%;
+    }
+}
+
+@media(max-width:917px) {
+    .buttons button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
